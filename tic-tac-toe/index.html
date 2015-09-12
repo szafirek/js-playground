@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app="">
+<head>
+	<meta charset="ut-8">
+	<title>.:tic-tac-toe</title>
+	<link href='http://fonts.googleapis.com/css?family=Rammetto+One|Kranky' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css">
+	<style>[ng-cloak]{display:none;}</style>
+</head>
+<body ng-controller="AppCtrl">
+	<hr />
+	<div id="main">
+		<h1>Tic-Tac-Toe</h1>
+		<div id="board" class="noselect">
+			<div class="field" ng-repeat="i in [0,1,2,3,4,5,6,7,8]" ng-click="play(i)" ng-cloak>{{board[i]}}</div>
+		</div>
+		<div id="notices" ng-cloak><h3>{{notice}}</h3></div>
+		<div id="new-game" class="shake" ng-click="newGame()">>> new game <<</div>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+	<script src="http://underscorejs.org/underscore.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

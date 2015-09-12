@@ -1,0 +1,4 @@
+html{height:100%;}
+body{margin:0;height:100%;width:100%;overflow:hidden;background-color:#ffffff;}
+#img{display:none;max-width:400px;}
+#inputImg{padding-top:15px;padding-bottom:15px;}

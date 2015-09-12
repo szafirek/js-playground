@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="memoryApp">
+<head>
+	<meta charset="utf-8">
+	<title>.:memory</title>
+	<link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css">
+	<style>[ng-cloak]{display:none;}</style>
+</head>
+<body ng-controller="memoryCtrl">
+	<section id="game">
+		<h1>Memory</h1>
+		<img id="title" src="img/title.png">
+		<div ng-class="{visible: endGame}" id="new-game" ng-click="newGame()">new game</div>
+		<div class="container">
+			<div ng-class="{selected: block.selected, inactive: block.inactive}" class="block" ng-repeat="block in blocks track by $index" ng-cloak ng-click="play(block)">
+				<div class="front side"></div>
+				<div class="back side"><img ng-src="img/{{block.img}}.jpg"></div>
+			</div>
+		</div>
+	</section>
+	<script src="vendor/angular.min.js"></script>
+	<script src="vendor/underscore.js"></script>
+	<script src="vendor/moment.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

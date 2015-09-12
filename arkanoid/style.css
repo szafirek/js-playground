@@ -1,0 +1,30 @@
+body{
+	margin:0 auto;
+	text-align:center;
+}
+
+#canvas{
+	padding:20px;
+	margin:20px;
+	border:1px solid #77001C;
+}
+
+#start{
+	position:absolute;
+	top:300px;
+	left:calc(50% - 150px);
+	text-align:center;
+	background:#B484B5;
+	padding:20px;
+	width:300px;
+	cursor:pointer;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing:7px;
+	font-weight:bold;
+	font-size:32px;
+	color:#D6F7DC;
+}
+
+#start:hover{
+	background:#CFB8CC;
+}

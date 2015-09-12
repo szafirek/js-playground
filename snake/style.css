@@ -1,0 +1,21 @@
+body{
+  text-align:center;
+  background:#D5CDD2;
+}
+#canvas{
+  margin-bottom:30px;
+}
+#btn{
+  display:none;
+  padding:10px 20px;
+  border-radius:3px;
+  background:#FD5D7E;
+  color:white;
+  cursor:pointer;
+}
+#btn:hover{
+  background:#FE93A9;
+}
+#btn:active{
+  background:#FEB7C6;
+}

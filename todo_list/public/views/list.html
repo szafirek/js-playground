@@ -1,0 +1,29 @@
+<section id="list">
+	<header>
+		<h2>Todo list <span ng-show="todos.length" ng-cloak>({{toComplete}})</span></h2>
+	</header>
+	<div class="tasks">
+		<div class="item">
+			<div ng-class="{all_completed: allCompleted}" class="check_all" ng-show="todos.length" ng-click="checkAll()"></div>
+			<form ng-submit="addTodo()">
+				<input placeholder="What to do?" class="todo-form" ng-model="newTodo">
+			</form>
+		</div>
+		<div ng-class="{completed: todo.completed, edited: todo === editedTodo}" ng-show="todos.length" ng-cloak ng-repeat="todo in todos | filter:statusFilter track by $index" class="item">
+			<div class="mark" ng-click="mark(todo)"></div>
+			<div class="description" ng-dblclick="editTodo(todo)">{{todo.title}}</div>
+			<div class="remove" ng-click="removeTodo(todo)"></div>
+			<form ng-submit="finalEditTodo(todo)">
+				<input placeholder="What to do?" class="edit-form" ng-model="todo.title" todo-escape="cancelChange(todo)">
+			</form>
+		</div>
+		<div class="item" ng-show="todos.length">
+			<div>
+				<span ng-class="{active: status === 'all'}" ng-click="changeStatus('all')">ALL</span>
+				<span ng-class="{active: status === 'active'}" ng-click="changeStatus('active')">ACTIVE</span>
+				<span ng-class="{active: status === 'completed'}" ng-click="changeStatus('completed')">COMPLETED</span>
+				<span ng-cloak><i class="fa fa-trash" ng-click="removeAllCompleted()"></i>({{completed}})</span>
+			</div>
+		</div>
+	</div>
+</section>

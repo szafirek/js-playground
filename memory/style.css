@@ -1,0 +1,86 @@
+body{
+	margin:0;
+	background:#0AE5F5;
+	color:#3B3B3B;
+	font-family: 'Dancing Script', cursive;
+}
+
+h1{
+	font-weight:bold;
+	font-size:3em;
+	margin:0 0 10px 0;
+	padding-top:100px;
+	padding-right:20px;
+	text-align:right;
+}
+
+#game{
+	width:450px;
+	margin:0 auto;
+	position:relative;
+	text-align:center;
+}
+
+.container{
+	width:450px;
+	margin:0 auto;
+	padding:0 20px;
+	position:relative;
+	perspective:1000px;
+}
+
+.block{
+	width:100px;
+	height:100px;
+	float:left;
+	margin:5px;
+	transform-style:preserve-3d;
+	transition: all 1.0s linear;
+}
+
+.selected{
+	transform:rotateY(180deg);
+}
+
+.side{
+	position:absolute;
+	width:100px;
+	height:100px;
+	backface-visibility:hidden;
+	overflow:hidden;
+}
+
+.front{
+	background:#00A4B0;
+}
+
+.back{
+	transform:rotateY(180deg);
+	background:#176369;
+}
+
+.inactive{
+	opacity:0;
+}
+
+#title{
+	left:0;
+	top:10px;
+	position:absolute;
+	transform:rotate(-10deg);
+}
+
+#new-game{
+	position:absolute;
+	font-size:3em;
+	color:red;
+	left:170px;
+	top:350px;
+	z-index:1001;
+	display:none;
+	cursor:pointer;
+}
+
+.visible{
+	display:block !important;
+}

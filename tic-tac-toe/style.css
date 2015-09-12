@@ -1,0 +1,77 @@
+body{
+	margin:0;
+	background:#EDE5E2;
+	font-family: 'Source Sans Pro', Helvetica, Arial ,sans-serif;
+	color:#A47472;
+}
+
+#main{
+	width:500px;
+	margin:0 auto;
+	text-align:center;
+}
+
+h1{
+	font-size:48px;
+	font-family: 'Kranky', cursive;
+}
+
+#board{
+	width:330px;
+	height:400px;
+	margin:0 auto;
+	font-family: 'Rammetto One', cursive;
+	font-size:50px;
+	color:#84B619;
+}
+
+.field{
+	padding-top:10px;
+	margin:5px;
+	background:#651063;
+	width:100px;
+	height:100px;
+	float:left;
+	border-radius:15px;
+}
+
+#notices{
+	height:60px;
+}
+
+#new-game{
+	cursor:pointer;
+	padding:20px 0;
+	margin:0 auto;
+	font-family: 'Kranky', cursive;
+	font-size:22px;
+	color:#DE6C07;
+}
+
+#new-game:hover{
+	font-weight:bold;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
+}
+
+hr:before, hr:after{
+	position:absolute;
+	content:'';
+	height:1em;
+	top:0;
+	left:0;
+	right:0;
+}
+
+hr:before{
+	background:linear-gradient(90deg,#de9007 15%,#DE6C07 15%,#DE6C07 12%,#84B619 12%,#84B619 26%,#651063 26%, #651063 30%,#84B619 30%,#84B619 32%,#A47472 32%,#A47472 35%,#651063 35%,#651063 55%,#DE6C07 55%,#DE6C07 59%,#A47472 59%,#A47472 63%,#84B619 63%,#84B619 82%,#651063 82%,#651063 92%,#591065 92%);
+}
+

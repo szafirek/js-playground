@@ -1,0 +1,84 @@
+html{
+	height:100%;
+}
+
+body{
+	margin:0;
+	background-color:#ffffff;
+	font-family: 'Sigmar One', cursive;
+}
+
+canvas{
+	display:block;
+	margin:10px;
+	padding:5px;
+	border:1px solid #CCCCCC;
+	margin-top:15px;
+	border-radius:25px;
+}
+
+#logo{
+	font-size:72px;
+	position:absolute;
+	top:20px;
+	left:480px;
+	transform:rotate(-7deg);
+	-ms-transform:rotate(-7deg);
+	-webkit-transform:rotate(-7deg);
+}
+
+.green{
+	color:#87C71D;
+}
+
+.orange{
+	color:#FF9900;
+}
+
+.fiolet{
+	color:#BA31F3;
+}
+
+.blue{
+	color:#07B3D3;
+}
+
+.pink{
+	color:#FF906B;
+}
+
+.deepblue{
+	color:#6A8CE9;
+}
+
+#next{
+	font-size:32px;
+	position:absolute;
+	top:150px;
+	left:500px;
+	color:#41BC81;
+}
+
+#start{
+	position:absolute;
+	top:300px;
+	left:283px;
+	padding:20px 30px;
+	background:#FF906B;
+	border-radius:10px;
+}
+
+#finish{
+	position:absolute;
+	top:300px;
+	left:197px;
+	padding:20px 30px;
+	background:#87C71D;
+	border-radius:10px;
+	display:none;
+}
+
+#start:hover{
+	background:#FFB197;
+	cursor:pointer;
+}
