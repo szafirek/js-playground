@@ -1,0 +1,27 @@
+body{
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}
+footer{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  padding:20px 0;
+}
+.wrapper{
+  padding:0 50px;
+}
+.wrapper input{
+  padding:5px;
+  border-radius:3px;
+  border:1px solid rgba(153, 0, 51, 0.2);
+}
+textarea:focus, input:focus{
+    outline: 0;
+}
+#banner-btn{
+  color:#990033;
+  font-weight:bold;
+  cursor:pointer;
+}
