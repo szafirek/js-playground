@@ -99,3 +99,4 @@ angular.module('memoryApp',[])
 			},1000);
 		};
 	}]);
+	
